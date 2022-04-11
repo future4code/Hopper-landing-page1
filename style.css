@@ -1,17 +1,57 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-header{
-    display: flex;
-    justify-content: space-between;  
-    background-color: #132235;
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #6DDAD3;
+}
+.container{
+    max-width: 1170px;
+    margin: auto;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
     color: white;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.aling-itens-center{
+align-items: center;
+}
+.justfy-content-between{
+justify-content: space-between;
+}
+header{ 
+    background-color: #132235;
     flex-direction: row; 
     align-items: center;
     position: fixed;
     width: 100%; 
-    padding: 10px;
+    padding: 12px 0;
+    line-height: 1.5;
+    font-size: 20px;
+}
+.header .nav{
+    padding: 0 20px;
+}
+.header .nav ul li {
+    display: inline-block;
+    margin-left: 40px;
+}
+.header.nav ul li a{
+    display: block;
+    text-transform: capitalize;
+}
+.header .nav ul li a.active,
+.header .nav ul li a:hover{
+    color: #f3a93d;
 }
 .imagem-logo{
 height: 80px;
@@ -19,17 +59,20 @@ height: 80px;
 .imagem-logo-casa{
     height: 60px;
     width: 70px; 
-    padding: 20px;  
+    padding: 10px;  
 }
-.menu{
-  
-}
-h3{
-     color: white;
-}
-button{
-    border-color: #132235;
-    background-color: #132235;
-    text-decoration: none;
-    color: white;
+@media(max-width:991px){
+    .header.nav{
+        width: 100%;
+        padding: 0;
+    }
+    .header.nav ul{
+        padding: 12px 15px 0;
+        margin-top: 12px;
+        border-top: 1px solid rgba(255,255,255,0.2);
+    }
+    .header.nav ul li{
+        display: block;
+        margin: 0;
+    }
 }
