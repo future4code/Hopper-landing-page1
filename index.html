@@ -28,35 +28,107 @@
 </nav>   
 </div>
 </div>
-</header>
-<main>
+      </header>
 
-    <div>
+<main class="corpo">
 
+    <section id="imagem">
 
-</div>
+        <form action="" method="get" class="formulario">
+            <h1>Emcontre um lar para <br> chamar de seu </h1>
 
+            <p>
+                <label for="bCidade"> <img src="img/cidade.png" alt=""> Cidade <br>
+                <select name="aCidade" id="bCidade">
+                    
+                  <optgroup label="Região Sul">
+                      <option value=""></option>
+                      <option value="PA">Porto Alegre</option>
+                      <option value="FN">Florianópolis</option>
+                      <option value="CR">Curitiba</option>
+                      <option value="CS">Cascavel</option>
+                      <option value="BC">Balneario Camberiu</option>
+                  </optgroup>
+                
+                  <optgroup label="Região Sudoeste">
+                      <option value="SP">São Paulo</option>
+                      <option value="RJ">RIo de Janeiro</option>
+                      <option value="BH">Belo Horizonte</option>
+                      <option value="RP">Ribeirão Preto</option>
+                      <option value="SC">Sorocaba</option>
+                      <option value="NT">Niterói</option>
+                  </optgroup>
+                  <optgroup label="Região Centro Oeste">
+                      <option value="FS">Formosa</option>
+                      <option value="CB">Cuiabá</option>
+                      <option value="CG">Campo Grande</option>
+                      <option value="BS">Brasilia</option>
+                  </optgroup>
+                  <optgroup  label="Região Nordeste">
+                      <option value="FZ">Fortaleza</option>
+                      <option value="JP">João Pessoa</option>
+                      <option value="AJ">Aracaju</option>
+                      <option value="MC">Maceió</option>
+                      <option value="RF">Recife</option>
+                  </optgroup>
+                  <optgroup  label="Região Norte">
+                      <option value="BL">Belém</option>
+                      <option value="BV">Boa Vista</option>
+                      <option value="MN">Manaus</option>
+                      <option value="SR">Santarém</option>
+                  </optgroup>
+                </select>
 
-<div>
+                </label>
+            </p>
 
+            <p>
+                <label for="bBairro"> <img src="img/lugar.jpg" alt=""> Bairro <br><input type="text" name="aBairro" id="bBairro" placeholder="Busque por Bairro"></label>
+            </p>
 
-</div>
+            <div id="escolha">
+                <p>
+                    <label for="bValor"> <img src="img/valor.jpg" alt=""> ALugel até <br>
+                    <select name="aValor" id="bvalor" >
+                        <optgroup label="Normal">
+                            <option value=""></option>
+                            <option value="Reais">R$ 1.000</option>
+                            <option value="Reais">R$ 2.000</option>
+                            <option value="Reais">R$ 3.000</option>
+                            <option value="Reais">R$ 4.000</option>
+                            <option value="Reais">R$ 5.000</option>
+                        </optgroup>
+                
+                        <optgroup label="Classic">
+                            <option value="Reais">R$ 10.000</option>
+                            <option value="Reais">R$ 20.0000</option>
+                        </optgroup>
+                    </select>
+                </label>
+                
+                        </p>
+                        
+                        <p>
+                    <label for="bQuarto" class="quarto"> <img src="img/cama.jpg" alt="">Quartos <br>
+                       <select name="aQuarto" id="bQuarto">
+                           <optgroup label="Normal">
+                               <option value=""></option>
+                              <option value=""> 1 +</option>
+                              <option value=""> 2 +</option>
+                              <option value=""> 3 +</option>
+                              <option value=""> 4 +</option>
+                              <option value=""> 5 +</option>
+                           </optgroup>
+                        </select>
+                    </label>  
+                        </p>
+            </div>
 
-<div>
-
-
-
-</div>
-
-<div>
-
-
-
-</div>
-
-
+            <button class="botao">Buscar Imóveis</button>
+        </form>
+    </section>
+    
 </main>
-
 
 <footer>
     <div class="footer">
