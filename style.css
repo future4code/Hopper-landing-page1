@@ -1,3 +1,269 @@
+/* codigo style Bruno */
+@charset"UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'Times New Roman', Times, serif;
+    background-color: #6DDAD3;
+}
+.container1{
+    max-width: 1280px;
+    margin: auto;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+  .aling-itens-center{
+align-items: center;
+}
+.justfy-content-between{
+justify-content: space-between;
+}
+header { 
+    display:flex;
+    background-color: #132235;
+    flex-direction: row; 
+    align-items: center;
+    width: 100%; 
+    padding: 30px 0;
+    line-height: 1.5;
+    font-size: 20px;
+}
+.header .nav{
+    padding: 0 20px;
+}
+.header .nav ul li {
+    display: inline-block;
+    margin-left: 40px;
+}
+.header.nav ul li a{
+    display: block;
+    text-transform: capitalize;
+}
+.header .nav ul li a.active,
+.header .nav ul li a:hover{
+    color: #f3a93d;
+}
+.imagem-logo{
+height: 80px;
+}
+.imagem-logo-casa{
+    height: 60px;
+    width: 70px; 
+    padding: 10px;  
+}
+@media(max-width:1280px){
+    .header.nav{
+        width: 100%;
+        padding: 0;
+    }
+    .header.nav ul{
+        padding: 12px 15px 0;
+        margin-top: 12px;
+        border-top: 1px solid rgba(255,255,255,0.2);
+    }
+    .header.nav ul li{
+        display: block;
+        margin: 0;
+    }
+  }
+/* Fim codigo style Bruno */
+
+/* codigo style Aurelio */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+#imagem{
+    height: 100vh;
+}
+
+
+.corpo #imagem{
+    background-image: url(./img/tela1.jpg);
+    background-position: center;
+    background-size: cover;
+    
+}
+
+@media (min-width: 960px){
+.formulario{
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    max-width: 550px;
+    height: 574px;
+    margin: 40px;
+    padding: 40px;
+    box-shadow: 2px 1.5px 1.5px rgba(0, 0, 0, 0.466);
+}
+}
+.formulario h1{
+    font-size: 2.2em;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+.formulario p{
+    border: 1px solid rgba(0, 0, 0, 0.397);
+    padding: 30 0 0 0;
+    height: 65px;
+    margin-bottom: 20px;
+}
+.formulario label,
+.formulario input,
+.formulario select{
+    padding: 3px;
+    margin-left: 20px;
+    margin-top: 3px;
+    margin-bottom: 5px;
+}
+.formulario .botao{
+    border: 1px solid rgba(0, 0, 0, 0.397);
+    width: 420px;
+    padding: 12px 30px;
+    background: #2a5ad3;
+    color: #fff;
+    font-size: 14px;
+    transition: 1s ease-in-out;
+}
+.formulario .botao:hover{
+    background: #052b8b;
+    cursor: pointer;
+  /* Fim codigo style Aurelio */
+  
+}
+
+  /* codigo style Gabriel */
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body{
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+}
+footer *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1280px;
+    margin: auto;
+  }
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style-type:none;
+}
+
+.footer{
+    background-color: #132235;
+    padding: 70px 0;
+}
+
+.footer-col{
+    width:25%;
+    padding: 0 15px;
+}
+
+.footer-col h4{
+    font-size: 18px;
+    color:#6ddad3;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before{
+    content:'';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: white;
+    height:2px;
+    box-sizing: border-box;
+    width:50px;
+
+}
+
+.footer-col ul li::not(:last-child){
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    color: #d8fcf9;
+    display:block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover{
+    color: #6ddad3;
+    padding-left: 8px;
+}
+
+.footer-col .social-links a{
+    display:inline-block;
+    height:40px;
+    width:40px;
+    background-color:white;
+    margin-right: 10px;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50px;
+    color:#6ddad3;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover{
+    color: white;
+    background-color:#6ddad3
+}
+
+/* responsividade*/
+
+@media(max-width: 767px){
+    .footer-col{
+        width:50%;
+        margin-bottom: 30px;
+    }
+
+}
+
+@media(max-width: 574px){
+    .footer-col{
+        width:100%;
+    }
+    .header.nav ul li{
+        display: block;
+        margin: 0;
+    }
+  }
 
 @charset "UTF-8";
 
@@ -42,7 +308,7 @@
 }
 .formulario p{
     border: 1px solid rgba(0, 0, 0, 0.397);
-    padding: 30pxpx;
+    padding: 30px;
     height: 65px;
     margin-bottom: 20px;
 }
@@ -66,82 +332,5 @@
 .formulario .botao:hover{
     background: #052b8b;
     cursor: pointer;
-=======
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 }
-body{
-    font-family: 'Times New Roman', Times, serif;
-    background-color: #6DDAD3;
-}
-.container{
-    max-width: 1170px;
-    margin: auto;
-}
-ul{
-    list-style: none;
-}
-a{
-    text-decoration: none;
-    color: white;
-}
-.row{
-    display: flex;
-    flex-wrap: wrap;
-}
-.aling-itens-center{
-align-items: center;
-}
-.justfy-content-between{
-justify-content: space-between;
-}
-header{ 
-    background-color: #132235;
-    flex-direction: row; 
-    align-items: center;
-    position: fixed;
-    width: 100%; 
-    padding: 12px 0;
-    line-height: 1.5;
-    font-size: 20px;
-}
-.header .nav{
-    padding: 0 20px;
-}
-.header .nav ul li {
-    display: inline-block;
-    margin-left: 40px;
-}
-.header.nav ul li a{
-    display: block;
-    text-transform: capitalize;
-}
-.header .nav ul li a.active,
-.header .nav ul li a:hover{
-    color: #f3a93d;
-}
-.imagem-logo{
-height: 80px;
-}
-.imagem-logo-casa{
-    height: 60px;
-    width: 70px; 
-    padding: 10px;  
-}
-@media(max-width:991px){
-    .header.nav{
-        width: 100%;
-        padding: 0;
-    }
-    .header.nav ul{
-        padding: 12px 15px 0;
-        margin-top: 12px;
-        border-top: 1px solid rgba(255,255,255,0.2);
-    }
-    .header.nav ul li{
-        display: block;
-        margin: 0;
-    }
-  }
+
