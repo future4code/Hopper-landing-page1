@@ -120,13 +120,13 @@ height: 80px;
     background-color: #fff;
     width: 500px;
     margin: 50px 0;
-    padding: 40px;
-    height: 80%;
+    padding: 20px 40px;
+    height: 85%;
     box-shadow: 2px 1.5px 1.5px rgba(0, 0, 0, 0.466);
 }
 .formulario h1{
     font-size: 2.2em;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     font-weight: 700;
 }
 .formulario p{
@@ -149,25 +149,107 @@ height: 80px;
     justify-content: space-between;
 }
 .formulario .botao{
-    border: 1px solid rgba(0, 0, 0, 0.397);
-    width: 420px;
+    border: 1.5px solid rgba(0, 0, 0, 0.397);
+    width: 100%;
     padding: 12px 30px;
     background: #2a5ad3;
     color: #fff;
-    font-size: 14px;
+    text-transform: uppercase;
     transition: 1s ease-in-out;
 }
 .formulario .botao:hover{
-    background: #052b8b;
-    cursor: pointer;
+    background: #021c5f;
+    cursor: pointer; 
+    letter-spacing: 10px;
 }
+
+
+/* css do conteudo ao lado */
 
 .conteudo{
     background-color: #fff;
-    height: 80%;
     width: 500px;
-    margin: 50px 0
+    margin: 50px 0;
+    padding: 20px 40px;
+    height: 85%;
+    box-shadow: 2px 1.5px 1.5px rgba(0, 0, 0, 0.466);
 }
+.conteudo h1{
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+.conteudo p{
+    margin-bottom: 10px;
+}
+.conteudo .video{
+    background-color: var(--cor4);
+    margin: 0 5px 10px;
+    position: relative;
+}
+.conteudo .video > iframe{
+    position: absolute;
+    width: 100%;
+    height: 230px;
+}
+
+
+
+
+
+/* Css de quem somos*/
+
+.artigo #img{
+    background-image: url(./img/tela2.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+.artigo .artigo-conteudo{
+   display: flex;
+   justify-content: center;
+   align-content: center;
+}
+.artigo .artigo-conteudo div{
+    width: 350px;
+    margin: 50px 0;
+    padding: 20px 40px;
+    height: 85%;
+    box-shadow: 2px 1.5px 1.5px rgba(0, 0, 0, 0.466);
+    color: #fff;
+    margin-right: 20px;
+}
+.artigo .artigo-conteudo #none{
+    border: none;
+    margin-right: none;
+}
+.artigo .artigo-conteudo h3{
+    margin: 10px 0
+
+}
+.artigo .artigo-conteudo p{
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.artigo .artigo-conteudo a{
+    display: inline-block;
+    border: 1.5px solid rgba(0, 0, 0, 0.397);
+    width: 100%;
+    background: #2a5ad3;
+    padding: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 1s ease-in-out;
+}
+.artigo .artigo-conteudo a:hover{
+    background: #021c5f;
+    cursor: pointer; 
+    letter-spacing: 10px;
+}
+
+
+
 /* Fim codigo style Aurelio */
 
 
