@@ -106,6 +106,7 @@ height: 80px;
 }
 #imagem{
     height: 100vh;
+    max-width: 100%;
 }
 .corpo #imagem{
     background-image: url(./img/tela1.jpg);
@@ -246,6 +247,74 @@ height: 80px;
     background: #021c5f;
     cursor: pointer; 
     letter-spacing: 10px;
+}
+
+@media(max-width:1280px){
+    #imagem{
+        height: 100%;
+        /* max-width: 100%; */
+        overflow: scroll;
+    }
+    .corpo #imagem{
+        /* background-image: url(./img/tela1.jpg);
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        justify-content: space-around; */
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 0px;
+    }
+    .formulario{
+        width: 90%;
+        margin: auto;
+        /* padding: 10px; */
+        margin-bottom: 20px;
+    }
+    .formulario h1{
+        font-size: 1.5em;
+        /* margin-bottom: 10px; */
+    }
+    .formulario p{
+        padding: 5px;  
+    }
+    .formulario #escolha{
+        /* display: flex;
+        flex-direction: row;
+        justify-content: space-between; */
+        flex-direction: column;
+    }
+    .conteudo{
+        /* background-color: transparent; */
+        width: 90%;
+        margin: auto;
+        padding: 10px;
+        max-height: 100%;
+        /* color: #fff; */
+        /* height: 85%;
+        box-shadow: 2px 1.5px 1.5px rgba(0, 0, 0, 0.466); */
+    }
+    .conteudo h1{
+        font-size: 1.5em;
+        /* margin-bottom: 20px;
+        font-weight: 700; */
+    }
+    /* .conteudo p{
+        margin-bottom: 10px;
+    } */
+    .conteudo .video{
+        /* background-color: var(--cor4);
+        margin: 0 5px 10px;
+        position: relative; */
+        width: 100%;
+        
+    }
+    .conteudo .video > iframe{
+        position: absolute;
+        width: 100%;
+        /* visibility: hidden; */
+        /* height: 230px; */
+    }
 }
 
 
