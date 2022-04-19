@@ -1,50 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="shortcut icon" href="./favicon_io/favicon.ico" type="image/x-icon">
     <title>Projeto em grupo Hopper - F4LIFE</title>
 </head>
+
 <body>
 
-  <header class="header">
+<header class="header">
+  <div class="container1">
+       <div class="row aling-itens-center justfy-content-between">
+           <img src="img/logo-recortada.png" class="imagem-logo">
+           <img class="imagem-logo-casa" src="img/casa-branca.png">
 
-<div class="container1">
-<div class="row aling-itens-center justfy-content-between">
-<img src="img/logo-recortada.png" class="imagem-logo">
-<img class="imagem-logo-casa" src="img/casa-branca.png">
-
-<nav class="nav">
-    <ul>
-        <li><div class="menu">
-            <a href="quem-somos.html">Quem Somos</a>
-        </div></li>
-        <li><a href="#">Cadastre se</a></li>
-        <li><a href="#">Sobre a empresa</a></li>
-        <li><a href="#">Perguntas frequentes</a></li>
-        
-    </ul>
-</nav>   
-</div>
-</div>
-      </header>
+          <nav class="nav">
+             <ul>
+               <li><div class="menu">
+               <a href="quem-somos.html">Quem Somos</a>
+               </div></li>
+               <li><a href="#">Cadastre se</a></li>
+               <li><a href="#">Sobre a empresa</a></li>
+               <li><a href="#">Perguntas frequentes</a></li>
+             </ul>
+          </nav>   
+      </div>
+  </div>
+</header>
 
 <main class="corpo">
 
     <section id="imagem">
-
-        <div class="form-box">
 
         <form action="" method="get" class="formulario">
             <h1>Encontre um lar para <br> chamar de seu </h1>
 
             <p>
                 <label for="bCidade"> <img src="img/cidade.png" alt=""> Cidade <br>
-                <select name="aCidade" id="bCidade">
-                    
+
+                <select name="aCidade" id="bCidade">  
                   <optgroup label="Região Sul">
                       <option value=""></option>
                       <option value="PA">Porto Alegre</option>
@@ -53,7 +51,7 @@
                       <option value="CS">Cascavel</option>
                       <option value="BC">Balneario Camberiu</option>
                   </optgroup>
-                
+
                   <optgroup label="Região Sudoeste">
                       <option value="SP">São Paulo</option>
                       <option value="RJ">RIo de Janeiro</option>
@@ -62,12 +60,14 @@
                       <option value="SC">Sorocaba</option>
                       <option value="NT">Niterói</option>
                   </optgroup>
+
                   <optgroup label="Região Centro Oeste">
                       <option value="FS">Formosa</option>
                       <option value="CB">Cuiabá</option>
                       <option value="CG">Campo Grande</option>
                       <option value="BS">Brasilia</option>
                   </optgroup>
+
                   <optgroup  label="Região Nordeste">
                       <option value="FZ">Fortaleza</option>
                       <option value="JP">João Pessoa</option>
@@ -75,14 +75,15 @@
                       <option value="MC">Maceió</option>
                       <option value="RF">Recife</option>
                   </optgroup>
+
                   <optgroup  label="Região Norte">
                       <option value="BL">Belém</option>
                       <option value="BV">Boa Vista</option>
                       <option value="MN">Manaus</option>
                       <option value="SR">Santarém</option>
                   </optgroup>
-                </select>
 
+                </select>
                 </label>
             </p>
 
@@ -131,7 +132,21 @@
             <button class="botao">Buscar Imóveis</button>
         </form>
 
-    </div>
+        <article class="conteudo">
+            <h1>
+                F4Life conheça o nosso Trabalho.
+            </h1>
+
+            <p>
+                F4Life é uma empresa de aluguéis de repúblicas para pessoas universitárias. Similar aos modelos de Quinto Andar e Loft, a empresa realiza reformas e prepara moradias para recepção de pessoas universitárias em um ambiente específico e otimizado para a vida de graduação. 
+            </p>
+
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/PGQ3IZ7SCM4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+        </article>
+
     </section>
     
 </main>
