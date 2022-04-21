@@ -258,11 +258,6 @@ height: 80px;
         overflow: scroll;
     }
     .corpo #imagem{
-        /* background-image: url(./img/tela1.jpg);
-        background-position: center;
-        background-size: cover;
-        display: flex;
-        justify-content: space-around; */
         flex-direction: column;
         justify-content: center;
         margin-top: 0px;
@@ -271,45 +266,27 @@ height: 80px;
         width: 90%;
         margin: auto;
         height: 85%;
-        /* padding: 10px; */
         margin-bottom: 20px;
     }
     .formulario h1{
         font-size: 1.5em;
-        /* margin-bottom: 10px; */
     }
     .formulario p{
         padding: 5px;  
     }
     .formulario #escolha{
-        /* display: flex;
-        flex-direction: row;
-        justify-content: space-between; */
         flex-direction: column;
     }
     .conteudo{
-        /* background-color: transparent; */
         width: 90%;
         margin: auto;
         padding: 10px;
-        /* height: auto; */
         max-height: auto;
-        /* color: #fff; */
-        /* height: 85%;
-        box-shadow: 2px 1.5px 1.5px rgba(0, 0, 0, 0.466); */
     }
     .conteudo h1{
         font-size: 1.5em;
-        /* margin-bottom: 20px;
-        font-weight: 700; */
     }
-    /* .conteudo p{
-        margin-bottom: 10px;
-    } */
     .conteudo .video{
-        /* background-color: var(--cor4);
-        margin: 0 5px 10px;
-        position: relative; */
         width: 100%;
         height: 350px;
         
@@ -318,30 +295,33 @@ height: 80px;
         position: absolute;
         width: 100%;
         height: 350px;
-        /* visibility: hidden; */
-        /* height: 230px; */
     }
 
-    .artigo .artigo-conteudo{
-        /* display: flex;
-        justify-content: center;
-        align-content: center; */
+    .artigo #img .artigo-conteudo{
         flex-direction: column;
-        align-items: center
+        align-items: center;
+        margin: 0;
+        padding: 0;
      }
-     .artigo .artigo-conteudo div{
-         /* width: 350px;
-         margin: 50px 0;
-         padding: 20px 40px;
-         height: 85%;
-         box-shadow: 2px 1.5px 1.5px rgba(0, 0, 0, 0.466);
-         color: #fff;
-         margin-right: 20px; */
-         /* max-width: 90%; */
-         height: 350px;
-         margin: 40px 0px;
-         padding: 10px 20px;  
+     .artigo #img .artigo-conteudo .pessoa{
+         max-width: 100vw;
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+         grid-template-rows: 1fr;
+         margin: 20px 0 20px -80px;
+         padding: 0;
      }
+     .artigo #img .artigo-conteudo .pessoa img{
+        width: 75px;
+        margin: 20px -20px 0 20px;
+        padding: 0;
+     }
+     .artigo #img .artigo-conteudo .pessoa .status{
+         margin: 0;
+         margin-left: -15px
+     }
+     
+     
 }
 /* Fim codigo style Aurelio */
 
