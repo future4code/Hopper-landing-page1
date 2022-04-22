@@ -1,12 +1,25 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+:root{
+    --cor1:#71D9CE;
+    --cor2:#468C8C;
+    --cor3:#2A5559;
+    --cor4:#182D40;
+
+    --font:'Montserrat', verdana, arial, sans-serif;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+}
+
+
 
 /* codigo style Bruno Header*/
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 body{
     font-family:'Times New Roman', Times, serif;
@@ -66,22 +79,6 @@ height: 80px;
     width: 70px; 
     padding: 10px;  
 }
-@media(max-width:767px){
-    .header.nav{
-        width: 100%;
-        padding: 0;
-    }
-    .header.nav ul{
-        padding: 12px 15px 0;
-        margin-top: 12px;
-        border-top: 1px solid rgba(255,255,255,0.2);
-    }
-    .header.nav ul li{
-        display: block;
-        margin: 0;
-    }
-  }
-
 /* Fim codigo style Bruno */
 
 
@@ -89,22 +86,6 @@ height: 80px;
 
 /* codigo style Aurélio Main */
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
-
-:root{
-    --cor1:#71D9CE;
-    --cor2:#468C8C;
-    --cor3:#2A5559;
-    --cor4:#182D40;
-
-    --font:'Montserrat', verdana, arial, sans-serif;
-}
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: var(--font);
-}
 #imagem{
     height: 100vh;
     max-width: 100%;
@@ -185,7 +166,6 @@ height: 80px;
     margin-bottom: 10px;
 }
 .conteudo .video{
-    background-color: var(--cor4);
     margin: 0 5px 10px;
     width: 100%;
     position: relative;
@@ -208,12 +188,12 @@ height: 80px;
     background-position: center;
     background-size: cover;
 }
-.artigo .artigo-conteudo{
+.artigo #img .artigo-conteudo{
    display: flex;
    justify-content: center;
    align-content: center;
 }
-.artigo .artigo-conteudo div{
+.artigo #img .artigo-conteudo .pessoa{
     width: 350px;
     margin: 50px 0;
     padding: 20px 40px;
@@ -252,10 +232,26 @@ height: 80px;
 }
 
 @media(max-width:1030px){
+
+    /* Bruno */
+
+    .header.nav{
+        width: 100%;
+        padding: 0;
+    }
+    .header.nav ul li{
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        padding: 12px 15px 0;
+        border-top: 1px solid rgba(255,255,255,0.2);
+    }
+
+
+    /* Aurelio */
     #imagem{
         height: 100%;
-        /* max-width: 100%; */
-        overflow: scroll;
+        max-width: 100%;
     }
     .corpo #imagem{
         flex-direction: column;
@@ -294,31 +290,31 @@ height: 80px;
     .conteudo .video > iframe{
         position: absolute;
         width: 100%;
-        height: 350px;
     }
 
     .artigo #img .artigo-conteudo{
         flex-direction: column;
         align-items: center;
-        margin: 0;
+        margin: 5px;
         padding: 0;
      }
      .artigo #img .artigo-conteudo .pessoa{
-         max-width: 100vw;
+         width: 100%;
+         height: auto;
          display: grid;
-         grid-template-columns: 1fr 1fr;
+         grid-template-columns: 20% 80%;
          grid-template-rows: 1fr;
-         margin: 20px 0 20px -80px;
-         padding: 0;
+         margin: 20px -30px 10px -57px;
+         padding: 10px;
      }
      .artigo #img .artigo-conteudo .pessoa img{
         width: 75px;
-        margin: 20px -20px 0 20px;
+        margin: 20px 0 0 0;
         padding: 0;
      }
      .artigo #img .artigo-conteudo .pessoa .status{
-         margin: 0;
-         margin-left: -15px
+         margin-left: 10px;
+         width: 100%
      }
      
      
