@@ -1,0 +1,439 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+:root{
+    --cor1:#71D9CE;
+    --cor2:#468C8C;
+    --cor3:#2A5559;
+    --cor4:#182D40;
+
+    --font:'Montserrat', verdana, arial, sans-serif;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+}
+
+
+
+/* codigo style Bruno Header*/
+
+body{
+    font-family:'Times New Roman', Times, serif;
+    background-color: #6DDAD3;
+}
+.container1{
+    max-width: 1280px;
+    margin: auto;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+  .aling-itens-center{
+align-items: center;
+}
+.justfy-content-between{
+justify-content: space-between;
+}
+header { 
+    display:flex;
+    background-color: #132235;
+    flex-direction: row; 
+    align-items: center;
+    width: 100%; 
+    padding: 30px 0;
+    line-height: 1.5;
+    font-size: 20px;
+}
+.header .nav{
+    padding: 0 20px;
+}
+.header .nav ul li {
+    display: inline-block;
+    margin-left: 40px;
+}
+.header.nav ul li a{
+    display: block;
+    text-transform: capitalize;
+}
+.header .nav ul li a.active,
+.header .nav ul li a:hover{
+    color: #f3a93d;
+}
+.imagem-logo{
+height: 80px;
+}
+.imagem-logo-casa{
+    height: 60px;
+    width: 70px; 
+    padding: 10px;  
+}
+/* Fim codigo style Bruno */
+
+
+
+
+/* codigo style Aurélio Main */
+
+#imagem{
+    height: 100vh;
+    max-width: 100%;
+}
+.corpo #imagem{
+    background-image: url(./img/tela1.jpg);
+    background-position: center;
+    background-size: cover;
+    /* position: relative; */
+    display: flex;
+    justify-content: space-around;
+}
+.formulario{
+    /* position: absolute; */
+    background-color: #fff;
+    width: 500px;
+    margin: 50px 0;
+    padding: 20px 40px;
+    height: 510px;
+    box-shadow: 2px 1.5px 1.5px rgba(0, 0, 0, 0.466);
+}
+.formulario h1{
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+.formulario p{
+    border: 1px solid rgba(0, 0, 0, 0.397);
+    padding: 10px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+.formulario label,
+.formulario input,
+.formulario select{
+    padding: 3px;
+    margin-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.formulario #escolha{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.formulario .botao{
+    border: 1.5px solid rgba(0, 0, 0, 0.397);
+    width: 100%;
+    padding: 12px 30px;
+    background: #2a5ad3;
+    color: #fff;
+    text-transform: uppercase;
+    transition: 1s ease-in-out;
+}
+.formulario .botao:hover{
+    background: #021c5f;
+    cursor: pointer; 
+    letter-spacing: 10px;
+}
+
+
+/* css do conteudo ao lado */
+
+.conteudo{
+    background-color: #fff;
+    width: 500px;
+    margin: 50px 0;
+    padding: 20px 40px;
+    height: 510px;
+    box-shadow: 2px 1.5px 1.5px rgba(0, 0, 0, 0.466);
+}
+.conteudo h1{
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+.conteudo p{
+    margin-bottom: 10px;
+}
+.conteudo .video{
+    margin: 0 5px 10px;
+    width: 100%;
+    position: relative;
+}
+.conteudo .video > iframe{
+    position: absolute;
+    width: 100%;
+    height: 230px;
+}
+
+
+
+
+
+/* Css de quem somos*/
+
+.artigo #img{
+    background-image: url(./img/tela2.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+.artigo #img .artigo-conteudo{
+   display: flex;
+   justify-content: center;
+   align-content: center;
+}
+.artigo #img .artigo-conteudo .pessoa{
+    width: 350px;
+    margin: 50px 0;
+    padding: 20px 40px;
+    height: 85%;
+    box-shadow: 2px 1.5px 1.5px rgba(0, 0, 0, 0.466);
+    color: #fff;
+    margin-right: 20px;
+}
+.artigo .artigo-conteudo #none{
+    border: none;
+    margin-right: none;
+}
+.artigo .artigo-conteudo h3{
+    margin: 10px 0
+
+}
+.artigo .artigo-conteudo p{
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.artigo .artigo-conteudo a{
+    display: inline-block;
+    border: 1.5px solid rgba(0, 0, 0, 0.397);
+    width: 100%;
+    background: #2a5ad3;
+    padding: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 1s ease-in-out;
+}
+.artigo .artigo-conteudo a:hover{
+    background: #021c5f;
+    cursor: pointer; 
+    letter-spacing: 10px;
+}
+
+@media(max-width:1030px){
+
+    /* Bruno */
+
+    .header.nav{
+        width: 100%;
+        padding: 0;
+    }
+    .header.nav ul li{
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        padding: 12px 15px 0;
+        border-top: 1px solid rgba(255,255,255,0.2);
+    }
+
+
+    /* Aurelio */
+    #imagem{
+        height: 100%;
+        max-width: 100%;
+    }
+    .corpo #imagem{
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 0px;
+    }
+    .formulario{
+        width: 90%;
+        margin: auto;
+        height: 85%;
+        margin-bottom: 20px;
+    }
+    .formulario h1{
+        font-size: 1.5em;
+    }
+    .formulario p{
+        padding: 5px;  
+    }
+    .formulario #escolha{
+        flex-direction: column;
+    }
+    .conteudo{
+        width: 90%;
+        margin: auto;
+        padding: 10px;
+        max-height: auto;
+    }
+    .conteudo h1{
+        font-size: 1.5em;
+    }
+    .conteudo .video{
+        width: 100%;
+        height: 350px;
+        
+    }
+    .conteudo .video > iframe{
+        position: absolute;
+        width: 100%;
+    }
+
+    .artigo #img .artigo-conteudo{
+        flex-direction: column;
+        align-items: center;
+        margin: 5px;
+        padding: 0;
+     }
+     .artigo #img .artigo-conteudo .pessoa{
+         width: 100%;
+         height: auto;
+         display: grid;
+         grid-template-columns: 20% 80%;
+         grid-template-rows: 1fr;
+         margin: 20px -30px 10px -57px;
+         padding: 10px;
+     }
+     .artigo #img .artigo-conteudo .pessoa img{
+        width: 75px;
+        margin: 20px 0 0 0;
+        padding: 0;
+     }
+     .artigo #img .artigo-conteudo .pessoa .status{
+         margin-left: 10px;
+         width: 100%
+     }
+     
+     
+}
+/* Fim codigo style Aurelio */
+
+
+
+
+  /* codigo style Gabriel Footer*/
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body{
+    /* line-height: 1.5; */
+    font-family: 'Poppins', sans-serif;
+}
+footer *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1280px;
+    margin: auto;
+  }
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style-type:none;
+}
+
+.footer{
+    background-color: #132235;
+    padding: 70px 0;
+}
+
+.footer-col{
+    width:25%;
+    padding: 0 15px;
+}
+
+.footer-col h4{
+    font-size: 18px;
+    color:#6ddad3;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before{
+    content:'';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: white;
+    height:2px;
+    box-sizing: border-box;
+    width:50px;
+
+}
+
+.footer-col ul li::not(:last-child){
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    color: #d8fcf9;
+    display:block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover{
+    color: #6ddad3;
+    padding-left: 8px;
+}
+
+.footer-col .social-links a{
+    display:inline-block;
+    height:40px;
+    width:40px;
+    background-color:white;
+    margin-right: 10px;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50px;
+    color:#6ddad3;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover{
+    color: white;
+    background-color:#6ddad3
+}
+
+/* responsividade*/
+
+@media(max-width: 767px){
+    .footer-col{
+        width:50%;
+        margin-bottom: 30px;
+    }
+
+}
+
+@media(max-width: 574px){
+    .footer-col{
+        width:100%;
+    }
+    .header.nav ul li{
+        display: block;
+        margin: 0;
+    }
+  }
